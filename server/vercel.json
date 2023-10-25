@@ -1,4 +1,4 @@
 {
-    "rewrites": [{ "source": "/ticket/(.*)", "destination": "/ticket" }]
+    "rewrites": [{ "source": "/ticket/(.*)", "destination": "/api" }]
 }
 
