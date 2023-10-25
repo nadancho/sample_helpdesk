@@ -1,0 +1,52 @@
+.fontStyle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbarc {
+    margin: auto;
+    text-align: left;
+    align-items: center;
+    font-size: large;
+    justify-content: left;
+}
+
+.create-component {
+
+    align-items: center;
+    max-width: 75%;
+}
+
+.dashboard {
+    align-items: center;
+    text-align: center;
+}
+
+.login-component {
+
+    align-items: center;
+    max-width: 50%;
+
+}
+
+.lookup-component {
+
+    align-items: center;
+    max-width: 75%;
+
+}
+
+.ticketList-component {
+
+    align-items: center;
+    max-width: 75%;
+}
+
+
+.more-text {
+
+    color: gray;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
