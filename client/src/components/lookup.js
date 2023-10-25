@@ -15,10 +15,10 @@ const Ticket = (props) => {
                 <td>{props.ticket.date}</td>
                 <td>{props.ticket.status}</td>
                 {!expanded && <td className="more-text">
-                    <a>Show..</a>
+                    <div>Show..</div>
                 </td>}
                 {expanded && <td className="more-text">
-                    <a>Less..</a>
+                    <div>Less..</div>
                 </td>}
             </tr>
 

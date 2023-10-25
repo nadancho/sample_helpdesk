@@ -3,6 +3,9 @@ import { useNavigate } from "react-router";
 import Container from "react-bootstrap/Container";
 
 export default function Respond(props) {
+  /**
+   * This component handles the response interaction with the server.
+   */
   const [form, setForm] = useState({
     subject: '',
     email: '',

@@ -15,13 +15,11 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import Respond from "./components/respond"
 import { useState } from "react";
-import { useNavigate } from "react-router";
 import Lookup from "./components/lookup";
 
 const App = () => {
 
   const [isAdmin, setAdmin] = useState(false);
-  const navigate = useNavigate();
 
   function logout(){
     setAdmin(false);

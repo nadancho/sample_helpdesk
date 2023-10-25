@@ -9,13 +9,10 @@ import Container from "react-bootstrap/Container";
 import { NavDropdown } from "react-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { useNavigate } from "react-router";
 
 
 // Here, we display our Navbar
 export default function Topbar({ isAdmin, logout }) {
-
-  const navigate = useNavigate();
 
   return (
     <Navbar expand="sm" className="navbarc">

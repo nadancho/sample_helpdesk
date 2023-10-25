@@ -35,7 +35,7 @@ export default function Dashboard() {
                         </span>
                         <button className="btn btn-info"
                             onClick={handleClickLookup}>
-                            <i class="bi bi-search" style={{ marginRight: 6 }}></i>
+                            <i className="bi bi-search" style={{ marginRight: 6 }}></i>
                             Lookup Ticket
                         </button>
                     </Col>
