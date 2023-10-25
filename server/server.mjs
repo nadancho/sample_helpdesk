@@ -13,12 +13,6 @@ app.use(cors(
 
 ));
 app.use(express.json());
-
-app.get<{}, MessageResponse>('/', (req, res) => {
-  res.json({
-    message: 'hello',
-  });
-});
     
 
 app.use("/ticket", records);
