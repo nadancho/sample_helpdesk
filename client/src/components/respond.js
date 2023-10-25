@@ -20,7 +20,7 @@ export default function Respond(props) {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(`http://localhost:5050/ticket/${props.id}`);
+      const response = await fetch(`https://sample-helpdesk-nadanchos-projects.vercel.app/ticket/${props.id}`);
 
       if (!response.ok) {
         const message = `An error has occurred: ${response.statusText}`;
@@ -63,7 +63,7 @@ export default function Respond(props) {
     };
 
     // This will send a post request to update the data in the database.
-    const response = await fetch(`http://localhost:5050/ticket/${props.id}`, {
+    const response = await fetch(`https://sample-helpdesk-nadanchos-projects.vercel.app/ticket/${props.id}`, {
       method: "PATCH",
       body: JSON.stringify(updatedTicket),
       headers: {

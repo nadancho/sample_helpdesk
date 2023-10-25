@@ -48,7 +48,7 @@ export default function TicketList() {
   // This method fetches the tickets from the database.
   useEffect(() => {
     async function getTickets() {
-      const response = await fetch(`http://localhost:5050/ticket/filter/${filter}`);
+      const response = await fetch(`https://sample-helpdesk-nadanchos-projects.vercel.app/ticket/filter/${filter}`);
 
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;

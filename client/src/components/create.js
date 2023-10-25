@@ -32,7 +32,7 @@ export default function Create() {
       ...form,
     };
 
-    await fetch("http://localhost:5050/ticket/createTicket", { //async request to server
+    await fetch("https://sample-helpdesk-nadanchos-projects.vercel.app/ticket/createTicket", { //async request to server
       method: "POST",
       headers: {
         "Content-Type": "application/json",

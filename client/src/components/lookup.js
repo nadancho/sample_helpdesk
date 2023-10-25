@@ -60,7 +60,7 @@ export default function Lookup() {
         e.preventDefault();
 
         if (email) {
-            const response = await fetch(`http://localhost:5050/ticket/lookup/${email}`);
+            const response = await fetch(`https://sample-helpdesk-nadanchos-projects.vercel.app/ticket/lookup/${email}`);
 
             const ticketsFromEmail = await response.json();
             setTickets(ticketsFromEmail);
