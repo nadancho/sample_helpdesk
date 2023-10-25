@@ -11,7 +11,6 @@ import TopBar from "./components/topbar";
 import Login from "./components/login";
 import TicketList from "./components/ticketList";
 import Dashboard from "./components/dashboard";
-import Edit from "./components/edit";
 import Create from "./components/create";
 import Respond from "./components/respond"
 import { useState } from "react";
@@ -36,7 +35,6 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login login={login} />} />
-        <Route path="/edit/:id" element={<Edit />} />
         <Route path="/respond/:id" element={<Respond />} />
         <Route path="/create" element={<Create />} />
         <Route path="/ticketList" element={<TicketList/>} />
