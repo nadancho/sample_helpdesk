@@ -1,4 +1,5 @@
 # HelpDesk / Ticketing system demo project
+Nathan Cho
 
 ## About
 This is a MERN Stack application - Mongo DB, Express, React, Node.js
