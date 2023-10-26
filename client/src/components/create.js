@@ -27,6 +27,13 @@ export default function Create() {
   async function onSubmit(e) {
     e.preventDefault();
 
+    if(form.email === "" || form.subject === "" || form.date === "" ){
+
+      alert('Please fill out the ticket form.');
+      return;
+
+    }
+
     //create new ticket object spread form data
     const newTicket = {
       ...form,
@@ -61,7 +68,7 @@ export default function Create() {
       <h3 style={{textAlign: 'center'}}>Create a new ticket!</h3>
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="subject">Subject:</label>
+          <label htmlFor="subject">Subject*:</label>
           <input
             type="text"
             className="form-control"
@@ -72,7 +79,7 @@ export default function Create() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="subject">Email:</label>
+          <label htmlFor="subject">Email*:</label>
           <input
             type="text"
             className="form-control"
@@ -83,7 +90,7 @@ export default function Create() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="description">Date:</label>
+          <label htmlFor="description">Date*:</label>
           <input
             type="date"
             className="form-control"
