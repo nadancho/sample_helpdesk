@@ -3,10 +3,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./components/css/styles.css";
 
-// We use Route in order to define the different routes of our application
 import { Route, Routes } from "react-router-dom";
 
-// We import all the components we need in our app
 import TopBar from "./components/topbar";
 import Login from "./components/login";
 import TicketList from "./components/ticketList";
@@ -18,12 +16,12 @@ import Lookup from "./components/lookup";
 
 const App = () => {
 
+  //isAdmin state only for demo to verify whether admin is logged in or not.
   const [isAdmin, setAdmin] = useState(false);
 
   function logout(){
     setAdmin(false);
   }
-
   function login(){
     setAdmin(true);
   }
