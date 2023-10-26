@@ -11,8 +11,15 @@ app.use(cors());
 app.use(express.json());
 
 
+app.get("/", (req, res) => { 
+  res.send("Hello!"); 
+}); 
 
 app.use("/ticket", records);
+
+app.get("*", (req, res) => { 
+  res.send("PAGE NOT FOUND"); 
+});
 
 // start the Express server
 app.listen(PORT, () => {
