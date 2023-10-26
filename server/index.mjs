@@ -7,7 +7,10 @@ import records from "./routes/record.mjs";
 const PORT = process.env.PORT || 5050;
 const app = express();
 
-app.use(cors());
+app.use(cors(
+
+
+));
 app.use(express.json());
 
 
@@ -22,8 +25,8 @@ app.get("*", (req, res) => {
 });
 
 // start the Express server
-app.listen(PORT, () => {
-  console.log(`Server is running on port: ${PORT}`);
+app.listen(5000, () => {
+  console.log(`Server is running on port: ${5000}`);
 });
 
 export default app;
